@@ -87,8 +87,6 @@ img {vertical-align: middle;}
 
 @media only screen and (max-width: 300px) {
     .text {font-size: 5px}
-    .slideshow-container {width: 100%}
-    body {width : auto}
 }
 
 /* css menu punya adit */
