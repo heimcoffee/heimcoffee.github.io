@@ -86,7 +86,7 @@ img {vertical-align: middle;}
 }
 
 @media only screen and (max-width: 300px) {
-    .text {font-size: 5px}
+    .text {font-size: 100px}
 }
 
 /* css menu punya adit */
