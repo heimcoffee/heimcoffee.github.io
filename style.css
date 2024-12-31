@@ -11,7 +11,7 @@ nav {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
 }
 .logo {
     display: flex;
@@ -87,7 +87,6 @@ img {vertical-align: middle;}
 
 @media only screen and (max-width: 300px) {
     .text {font-size: 11px}
-    body (width : 100%}
 }
 
 /* css menu punya adit */
