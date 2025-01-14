@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/heim-logo.png">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="img/heim-logo.png" alt="logo" height="80px">
+        <h1 style="margin: 0; color: white;"><span style="font-weight: bold; color: white;">Heim</span> Coffee</h1>
+    </div>
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Review.html">Review</a></li>
+    </ul>
+</nav>
+
+<div class="contact-container">
+    <h2>Reviewer Heim Coffee</h2>
+    <div class="rating">
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+    </div>
+
+    <form id="contactForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Saran dan Kritik:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Kirim">
+    </form>
+</div>
+
+<div>
+    <footer>
+        <p>Jl. Dr. Sutomo, Gg. Karya 1, Kec. Pontianak, Kota Pontianak, Kalimantan Barat</p>
+        <p>&copy; 2025 Heim Coffee</p>
+        <div class="flex-box">
+            <h2>Contact Us</h2>
+            <h4>Operational Hours</h4>
+            <p>Senin - Jumat 07.00 - 23.00 | Sabtu - Minggu 07.00 - 23.30</p>
+            <div class="social-media-images">
+
+                <div class="popup-element">
+                    <a href="https://www.instagram.com/heim.coffee/" class="popup-trigger">
+                        <img src="img/ig.png" alt="Instagram" style="weight: 2%; height: 2%">
+                    </a>
+                </div>
+
+                <div class="popup-element">
+                    <a href="https://www.tiktok.com/@heimcoffee?_t=ZS-8srSLLtBrQw&_r=1">
+                        <img src="img/tk.png" alt="TikTok" class="popup-trigger" style="height: 2%; weight: 2%;">
+                    </a>
+                </div>
+
+                <div class="popup-element">
+                    <a href="https://www.threads.net/@heim.coffee">
+                        <img src="img/threadpng.png" alt="Threads" class="popup-trigger" style="height: 2%; weight: 2%">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+</body>
+</html>
+
+<script>
+    const allStars = document.querySelectorAll('.star')
+
+    allStars.forEach( (star, i) => {
+    star.onclick = function () {
+        console.log(star);
+        let current_star_level = i + 1;
+
+        allStars.forEach( (star, j) => {
+            if (current_star_level >= j + 1) {
+                star.innerHTML = '&#9733';
+            } else {
+                star.innerHTML = '&#9734';
+            }
+        })
+        }
+    })
+</script>
